@@ -8,7 +8,8 @@ class Window(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('./Views/menu.ui', self)   
-
+        self.setWindowIcon(QtGui.QIcon('./Resources/Images/sudoku_logo.png'))
+        self.setWindowTitle("SUDOKU")
         self.pushButton_ResolverSudoku.clicked.connect(self.pushButtonSolveSudoku)
 
 
