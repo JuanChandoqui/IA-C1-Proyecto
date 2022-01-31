@@ -1,0 +1,4 @@
+.env
+/Models/__pycache__
+/.qt_for_python
+/Resources/*
