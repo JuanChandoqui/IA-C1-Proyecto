@@ -61,7 +61,10 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QLineEdit" name="line_0_0">
+     <widget class="QLineEdit" name="line_0">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -100,7 +103,10 @@
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_0_1">
+     <widget class="QLineEdit" name="line_1">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -129,7 +135,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_0_2">
+     <widget class="QLineEdit" name="line_2">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -158,10 +167,13 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_0_5">
+     <widget class="QLineEdit" name="line_9">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>100</x>
+        <x>0</x>
         <y>40</y>
         <width>51</width>
         <height>41</height>
@@ -187,7 +199,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_0_4">
+     <widget class="QLineEdit" name="line_10">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -216,10 +231,13 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_0_3">
+     <widget class="QLineEdit" name="line_11">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>100</x>
         <y>40</y>
         <width>51</width>
         <height>41</height>
@@ -229,7 +247,6 @@
        <font>
         <weight>75</weight>
         <bold>true</bold>
-        <kerning>true</kerning>
        </font>
       </property>
       <property name="styleSheet">
@@ -246,36 +263,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_0_8">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>80</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
+     <widget class="QLineEdit" name="line_18">
+      <property name="enabled">
+       <bool>false</bool>
       </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);
-</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_0_6">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -304,10 +295,45 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_0_7">
+     <widget class="QLineEdit" name="line_19">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
+        <y>80</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_20">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
         <y>80</y>
         <width>51</width>
         <height>41</height>
@@ -352,7 +378,10 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QLineEdit" name="line_1_0">
+     <widget class="QLineEdit" name="line_3">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -380,7 +409,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_1_1">
+     <widget class="QLineEdit" name="line_4">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -409,7 +441,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_1_2">
+     <widget class="QLineEdit" name="line_5">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -438,65 +473,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_1_5">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>40</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
+     <widget class="QLineEdit" name="line_12">
+      <property name="enabled">
+       <bool>false</bool>
       </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);
-</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_1_4">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>40</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);
-</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_1_3">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -525,11 +505,14 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_1_8">
+     <widget class="QLineEdit" name="line_13">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>80</y>
+        <x>50</x>
+        <y>40</y>
         <width>51</width>
         <height>41</height>
        </rect>
@@ -554,7 +537,42 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_1_6">
+     <widget class="QLineEdit" name="line_14">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>40</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_21">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -583,10 +601,45 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_1_7">
+     <widget class="QLineEdit" name="line_22">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
+        <y>80</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_23">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
         <y>80</y>
         <width>51</width>
         <height>41</height>
@@ -631,7 +684,10 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QLineEdit" name="line_2_0">
+     <widget class="QLineEdit" name="line_6">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -660,7 +716,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_2_1">
+     <widget class="QLineEdit" name="line_7">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -689,7 +748,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_2_2">
+     <widget class="QLineEdit" name="line_8">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -718,65 +780,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_2_5">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>40</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
+     <widget class="QLineEdit" name="line_15">
+      <property name="enabled">
+       <bool>false</bool>
       </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);
-</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_2_4">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>40</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);
-</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_2_3">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -805,11 +812,14 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_2_8">
+     <widget class="QLineEdit" name="line_16">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>80</y>
+        <x>50</x>
+        <y>40</y>
         <width>51</width>
         <height>41</height>
        </rect>
@@ -834,7 +844,42 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_2_6">
+     <widget class="QLineEdit" name="line_17">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>40</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_24">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -863,10 +908,45 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_2_7">
+     <widget class="QLineEdit" name="line_25">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
+        <y>80</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_26">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
         <y>80</y>
         <width>51</width>
         <height>41</height>
@@ -911,7 +991,10 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QLineEdit" name="line_3_0">
+     <widget class="QLineEdit" name="line_27">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -940,7 +1023,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_3_1">
+     <widget class="QLineEdit" name="line_28">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -969,7 +1055,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_3_2">
+     <widget class="QLineEdit" name="line_29">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -998,10 +1087,13 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_3_5">
+     <widget class="QLineEdit" name="line_36">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>100</x>
+        <x>0</x>
         <y>40</y>
         <width>51</width>
         <height>41</height>
@@ -1027,7 +1119,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_3_4">
+     <widget class="QLineEdit" name="line_37">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -1056,10 +1151,13 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_3_3">
+     <widget class="QLineEdit" name="line_38">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>100</x>
         <y>40</y>
         <width>51</width>
         <height>41</height>
@@ -1085,7 +1183,42 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_3_8">
+     <widget class="QLineEdit" name="line_45">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_47">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -1114,36 +1247,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_3_6">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>80</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
+     <widget class="QLineEdit" name="line_46">
+      <property name="enabled">
+       <bool>false</bool>
       </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);
-</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_3_7">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -1191,7 +1298,10 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QLineEdit" name="line_4_0">
+     <widget class="QLineEdit" name="line_30">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -1220,7 +1330,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_4_1">
+     <widget class="QLineEdit" name="line_31">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -1249,7 +1362,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_4_2">
+     <widget class="QLineEdit" name="line_32">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -1278,63 +1394,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_4_5">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>40</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
+     <widget class="QLineEdit" name="line_39">
+      <property name="enabled">
+       <bool>false</bool>
       </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_4_4">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>40</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_4_3">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -1363,10 +1426,109 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_4_8">
+     <widget class="QLineEdit" name="line_40">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>40</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_41">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>100</x>
+        <y>40</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_48">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_49">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>50</x>
         <y>80</y>
         <width>51</width>
         <height>41</height>
@@ -1392,38 +1554,13 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_4_6">
+     <widget class="QLineEdit" name="line_50">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>80</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_4_7">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
+        <x>100</x>
         <y>80</y>
         <width>51</width>
         <height>41</height>
@@ -1468,7 +1605,10 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QLineEdit" name="line_5_0">
+     <widget class="QLineEdit" name="line_33">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -1497,7 +1637,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_5_1">
+     <widget class="QLineEdit" name="line_34">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -1526,7 +1669,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_5_2">
+     <widget class="QLineEdit" name="line_35">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -1555,65 +1701,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_5_5">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>40</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
+     <widget class="QLineEdit" name="line_42">
+      <property name="enabled">
+       <bool>false</bool>
       </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);
-</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_5_4">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>40</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);
-</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_5_3">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -1642,11 +1733,14 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_5_8">
+     <widget class="QLineEdit" name="line_43">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>80</y>
+        <x>50</x>
+        <y>40</y>
         <width>51</width>
         <height>41</height>
        </rect>
@@ -1671,7 +1765,42 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_5_6">
+     <widget class="QLineEdit" name="line_44">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>40</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_51">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -1700,10 +1829,45 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_5_7">
+     <widget class="QLineEdit" name="line_52">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
+        <y>80</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_53">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
         <y>80</y>
         <width>51</width>
         <height>41</height>
@@ -1748,7 +1912,10 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QLineEdit" name="line_6_0">
+     <widget class="QLineEdit" name="line_54">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -1777,7 +1944,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_6_1">
+     <widget class="QLineEdit" name="line_55">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -1806,7 +1976,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_6_2">
+     <widget class="QLineEdit" name="line_56">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -1835,65 +2008,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_6_5">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>40</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
+     <widget class="QLineEdit" name="line_63">
+      <property name="enabled">
+       <bool>false</bool>
       </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);
-</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_6_4">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>40</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);
-</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_6_3">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -1922,11 +2040,14 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_6_8">
+     <widget class="QLineEdit" name="line_64">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>80</y>
+        <x>50</x>
+        <y>40</y>
         <width>51</width>
         <height>41</height>
        </rect>
@@ -1951,7 +2072,42 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_6_6">
+     <widget class="QLineEdit" name="line_65">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>40</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_72">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -1980,10 +2136,45 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_6_7">
+     <widget class="QLineEdit" name="line_73">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
+        <y>80</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_74">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
         <y>80</y>
         <width>51</width>
         <height>41</height>
@@ -2028,7 +2219,10 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QLineEdit" name="line_7_0">
+     <widget class="QLineEdit" name="line_57">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -2057,7 +2251,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_7_1">
+     <widget class="QLineEdit" name="line_58">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -2086,7 +2283,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_7_2">
+     <widget class="QLineEdit" name="line_59">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -2115,65 +2315,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_7_5">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>40</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
+     <widget class="QLineEdit" name="line_66">
+      <property name="enabled">
+       <bool>false</bool>
       </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);
-</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_7_4">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>40</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);
-</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_7_3">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -2202,11 +2347,14 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_7_8">
+     <widget class="QLineEdit" name="line_67">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>80</y>
+        <x>50</x>
+        <y>40</y>
         <width>51</width>
         <height>41</height>
        </rect>
@@ -2231,7 +2379,42 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_7_6">
+     <widget class="QLineEdit" name="line_68">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>40</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_75">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -2260,10 +2443,45 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_7_7">
+     <widget class="QLineEdit" name="line_76">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
+        <y>80</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_77">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
         <y>80</y>
         <width>51</width>
         <height>41</height>
@@ -2308,7 +2526,10 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QLineEdit" name="line_8_0">
+     <widget class="QLineEdit" name="line_60">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -2337,7 +2558,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_8_1">
+     <widget class="QLineEdit" name="line_61">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -2353,7 +2577,8 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);</string>
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2365,7 +2590,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_8_2">
+     <widget class="QLineEdit" name="line_62">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -2394,64 +2622,10 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_8_5">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>40</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
+     <widget class="QLineEdit" name="line_69">
+      <property name="enabled">
+       <bool>false</bool>
       </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_8_4">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>40</y>
-        <width>51</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);
-</string>
-      </property>
-      <property name="inputMask">
-       <string>d</string>
-      </property>
-      <property name="maxLength">
-       <number>1</number>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="line_8_3">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -2480,11 +2654,14 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_8_8">
+     <widget class="QLineEdit" name="line_70">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>80</y>
+        <x>50</x>
+        <y>40</y>
         <width>51</width>
         <height>41</height>
        </rect>
@@ -2496,7 +2673,8 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);</string>
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2508,7 +2686,42 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_8_6">
+     <widget class="QLineEdit" name="line_71">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>40</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_78">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -2537,10 +2750,45 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="line_8_7">
+     <widget class="QLineEdit" name="line_79">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>50</x>
+        <y>80</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 170, 255);
+</string>
+      </property>
+      <property name="inputMask">
+       <string>d</string>
+      </property>
+      <property name="maxLength">
+       <number>1</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="line_80">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
         <y>80</y>
         <width>51</width>
         <height>41</height>
