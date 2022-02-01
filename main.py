@@ -34,8 +34,8 @@ class Window(QMainWindow):
             
         #     list_Grid_with_0.append(list_aux) #para mantener los valores en color negro
         #     list_Grid.append(list_aux)
-
-        self.threadSolveSudoku(list_Grid=list_Grid)
+        self.fillSudoku(list_Grid)
+        # self.threadSolveSudoku(list_Grid=list_Grid)
 
 
     def fillSudoku(self, list_Grid:list):
@@ -47,12 +47,12 @@ class Window(QMainWindow):
                 getattr(self, "line_"+str(i)).setFont(QtGui.QFont("Times",weight=QtGui.QFont.Bold))
                 Palette.setColor(QtGui.QPalette.Text, QtCore.Qt.white)
                 getattr(self, "line_"+str(i)).setPalette(Palette)
-                sleep(0.01)
+                # sleep(0.01)
 
 
-    def threadSolveSudoku(self, list_Grid):
-        thread = Thread(target=self.fillSudoku, args=(list_Grid,))
-        thread.start() 
+    # def threadSolveSudoku(self, list_Grid):
+    #     thread = Thread(target=self.fillSudoku, args=(list_Grid,))
+    #     thread.start() 
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
