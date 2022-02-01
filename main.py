@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5 import uic, QtGui, QtCore
 from threading import Thread
 from time import sleep
+import Models.AG as sudoku
 
 class Window(QMainWindow):
     def __init__(self):
@@ -14,6 +15,8 @@ class Window(QMainWindow):
 
 
     def pushButtonSolveSudoku(self):
+        sudoku.inicializar()
+        print(sudoku.get_sudoku())
         list_Grid = []
         list_Grid_with_0 = []
 
