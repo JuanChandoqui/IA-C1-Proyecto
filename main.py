@@ -16,42 +16,42 @@ class Window(QMainWindow):
 
     def pushButtonSolveSudoku(self):
         sudoku.inicializar()
-        print(sudoku.get_sudoku())
-        list_Grid = []
-        list_Grid_with_0 = []
+        list_Grid = sudoku.get_sudoku()
+        print(list_Grid)
 
-        for i in range(9):
-            list_aux = []
-            for j in range(9):
-                number = getattr(self, "line_" + str(i) + "_" + str(j)).text()
-                if (number == "" or number == " " or number == "  "):
-                    list_aux.append(0)               
-                else:
-                    number = int(number)
-                    list_aux.append(number)
+        # list_Grid = []
+        # list_Grid_with_0 = []
+
+        # for i in range(9):
+        #     list_aux = []
+        #     for j in range(9):
+        #         number = getattr(self, "line_" + str(i) + "_" + str(j)).text()
+        #         if (number == "" or number == " " or number == "  "):
+        #             list_aux.append(0)               
+        #         else:
+        #             number = int(number)
+        #             list_aux.append(number)
             
-            list_Grid_with_0.append(list_aux) #para mantener los valores en color negro
-            list_Grid.append(list_aux)
+        #     list_Grid_with_0.append(list_aux) #para mantener los valores en color negro
+        #     list_Grid.append(list_aux)
 
-        self.threadSolveSudoku(list_Grid=list_Grid, list_Grid_with_0=list_Grid_with_0)
+        self.threadSolveSudoku(list_Grid=list_Grid)
 
 
-    def fillSudoku(self, list_Grid:list, list_Grid_with_0: list):
+    def fillSudoku(self, list_Grid:list):
         Palette= QtGui.QPalette()
 
-        for i in range(9):
-            for j in range(9):
-                if(list_Grid_with_0[i][j] == 0):
-                    getattr(self, "line_"+str(i)+"_"+str(j)).setText(f'{1}')
-                    # getattr(self, "line_"+str(i)+"_"+str(j)).setText(f'{list_Grid[i][j]}') #TODO: <---- colocar el valor deseado a solucionar en setText()
-                    getattr(self, "line_"+str(i)+"_"+str(j)).setFont(QtGui.QFont("Times",weight=QtGui.QFont.Bold))
-                    Palette.setColor(QtGui.QPalette.Text, QtCore.Qt.white)
-                    getattr(self, "line_"+str(i)+"_"+str(j)).setPalette(Palette)
-                    sleep(0.01)
+        for i in range(81):
+                # getattr(self, "line_"+str(i)).setText(f'{1}')
+                getattr(self, "line_"+str(i)).setText(f'{list_Grid[i]}')
+                getattr(self, "line_"+str(i)).setFont(QtGui.QFont("Times",weight=QtGui.QFont.Bold))
+                Palette.setColor(QtGui.QPalette.Text, QtCore.Qt.white)
+                getattr(self, "line_"+str(i)).setPalette(Palette)
+                sleep(0.01)
 
 
-    def threadSolveSudoku(self, list_Grid, list_Grid_with_0):
-        thread = Thread(target=self.fillSudoku, args=(list_Grid, list_Grid_with_0,))
+    def threadSolveSudoku(self, list_Grid):
+        thread = Thread(target=self.fillSudoku, args=(list_Grid,))
         thread.start() 
 
 if __name__ == '__main__':
