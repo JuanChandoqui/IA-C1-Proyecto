@@ -120,9 +120,9 @@ def imprime_sudoku(sudoku):
         iteracion += 1
 
 def main():
-    poblacionInicial = 700
+    poblacionInicial = 450
     longitudIndividuo = 81
-    poblacion_maxima = 1000
+    poblacion_maxima = 900
 
     individuos = [ [ random.randint(1, 9) for _ in range(longitudIndividuo)] for _ in range(poblacionInicial) ]
 
@@ -132,12 +132,12 @@ def main():
     poblacion_data = {'individuo':individuos,'genotipo':[ ''.join(str(i)) for i in individuos],'fitness':map(calcular_fitness,individuos)}
 
     poblacion = DataFrame(poblacion_data).sort_values(by='fitness',ascending=True,ignore_index=True)
-    numero_generaciones = 400
+    numero_generaciones = 600
     generacion = 0
     while list(poblacion.iloc[0])[2] > 0 and generacion<numero_generaciones:
         print(f'{generacion}. mejor solucion: {list(poblacion.iloc[0])[2] }')
         descendientes = cruza(poblacion)
-        nuevos_individuos = mutacion(descendientes,0.1,0.055)
+        nuevos_individuos = mutacion(descendientes,0.11,0.045)
         data_nuevos_individuos = {'individuo':nuevos_individuos,'genotipo':[ ''.join(str(i)) for i in nuevos_individuos],'fitness':map(calcular_fitness,nuevos_individuos)}
         pd_nuevos_individuos = DataFrame(data_nuevos_individuos)
         poblacion = concat([poblacion,pd_nuevos_individuos]).sort_values(by='fitness',ascending=True,ignore_index=True)
