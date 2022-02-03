@@ -1,93 +1,94 @@
+from random import random
+from matplotlib.colors import PowerNorm
+from pandas import DataFrame, concat
+from numpy import array_split
 import random
-import numpy as np
-import matplotlib.pyplot as plt
-from deap import base, creator, tools
 
-sudokuResuelto = []
+def obtener_sectores(sudoku):
+    sectores = []
+    indice = 0
+    while indice < 81:
+        indiceSector = 0
+        while indiceSector < 9:
+            subsector = indice+indiceSector
+            sectores.append(sudoku[subsector:subsector+3]+sudoku[subsector+9:subsector+12]+sudoku[subsector+18:subsector+21])
+            indiceSector+=3
+        indice+=27
+    return sectores
 
-def calcula_fitness(sudoku):
-    def repetidos(aux):
-        fit = 0
-        if len(aux) != len(set(aux)):
-            fit = len(aux) - len(set(aux))
-        return fit
+def calcular_fitness(sudoku):
+    filas = [sudoku[(i*9):(9*i)+9] for i in range(9)]
+    columnas = [sudoku[i:81:9] for i in range(9)]
+    sectores = obtener_sectores(sudoku)
+    secciones = filas+columnas+sectores
 
-    def evalua_filas_o_columnas(sudoku, fil_col, desplazamiento):
-        iteracion = 0
-        fit = 0
-        while iteracion < 9:
-            aux = list()
+    fitness = 0
 
-            for i in fil_col:
-                aux.append(sudoku[i])
+    for seccion in secciones:
+        numeros_repetidos= len(seccion) - len(set(seccion))
+        if len(seccion) != len(set(seccion)):
+            fitness+= numeros_repetidos
 
-            fit += repetidos(aux)
+    return fitness
 
-            for i in range(0, len(fil_col)):
-                fil_col[i] += desplazamiento
+def cruza(poblacion):
+    longitud_poblacion = len(poblacion['individuo'])
+    indice_padres = array_split(random.sample(range(longitud_poblacion), longitud_poblacion),int(longitud_poblacion/2))
+    descendientes = []
+    for indice in indice_padres:
+        padre1=poblacion['individuo'][indice[0]]
+        padre2=poblacion['individuo'][indice[1]]
 
-            iteracion += 1
-        return fit
+        numero_puntos = random.randint(1,9)
+        puntos_cruza = list(reversed(sorted(random.sample(range(1, len(padre1)-1), numero_puntos))))
+        hijo1 = []
+        hijo2 = []
+        cruza = False
+        indice_punto = 0
+        indice_maximo = len(padre1)
+        while len(puntos_cruza) > 0:
+            punto = puntos_cruza.pop()
+            if cruza:
+                hijo2+=padre1[indice_punto:punto]
+                hijo1+=padre2[indice_punto:punto]
+                cruza = False
+            else:
+                hijo1+=padre1[indice_punto:punto]
+                hijo2+=padre2[indice_punto:punto]
+                cruza = True
+            indice_punto = punto
+            if len(puntos_cruza) == 0:
+                if cruza:
+                    hijo2+=padre1[indice_punto:indice_maximo]
+                    hijo1+=padre2[indice_punto:indice_maximo]
+                    cruza = False
+                else:
+                    hijo1+=padre1[indice_punto:indice_maximo]
+                    hijo2+=padre2[indice_punto:indice_maximo]
+                    cruza = True
+        descendientes.append(hijo1)
+        descendientes.append(hijo2)
+    return descendientes
 
-    fitness  = 0
-    columnas = [0, 9, 18, 27, 36, 45, 54, 63, 72]
-    filas    = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+def mutacion(descendientes,pmi,pmg):
+    descendientes_mutados = []
+    for individuo in descendientes:
+        pmi_actual = random.uniform(0, 1)
+        if pmi_actual <= pmi:
+            for indice_gen in range(len(individuo)):
+                pmg_actual=random.uniform(0, 1)
+                if pmg_actual <= pmg:
+                    individuo[indice_gen] = random.randint(1,9)
+        descendientes_mutados.append(individuo)
+    return descendientes_mutados
 
-    # Evalúa las columnas
-    fitness += evalua_filas_o_columnas(sudoku, columnas, 1)
+def poda(poblacion, poblacion_maxima):
+    if len(poblacion.index) > poblacion_maxima:
+        poblacion=poblacion.drop_duplicates(['genotipo'])
+        if len(poblacion.index) > poblacion_maxima:
+            poblacion = poblacion.iloc[0:poblacion_maxima]
+    return poblacion.sort_values(by='fitness',ascending=True,ignore_index=True)
 
-    # Evalúa las filas
-    fitness += evalua_filas_o_columnas(sudoku, filas, 9)
-
-    # Evalúa los sectores
-    posiciones_sectores = [0, 3, 6, 27, 30, 33, 54, 57, 60]
-    for i in posiciones_sectores:
-        aux = recorre_sectores(sudoku, i)
-        fitness += repetidos(aux)
-
-    return (float(fitness),)
-
-def recorre_sectores(sudoku, posicion):
-        sector = [
-            sudoku[posicion+0+0],  sudoku[posicion+1+0],  sudoku[posicion+2+0],
-            sudoku[posicion+0+9],  sudoku[posicion+1+9],  sudoku[posicion+2+9],
-            sudoku[posicion+0+18], sudoku[posicion+1+18], sudoku[posicion+2+18]
-        ]
-        return sector
-
-def repetidos(aux):
-    fit = 0
-    if len(aux) != len(set(aux)):
-        fit = len(aux) - len(set(aux))
-    return fit
-
-def evalua_filas_o_columnas(sudoku, fil_col, desplazamiento):
-        iteracion = 0
-        fit = 0
-        while iteracion < 9:
-            aux = list()
-
-            for i in fil_col:
-                aux.append(sudoku[i])
-
-            fit += repetidos(aux)
-
-            for i in range(0, len(fil_col)):
-                fil_col[i] += desplazamiento
-
-            iteracion += 1
-        return fit
-
-def recorre_sectores(sudoku, posicion):
-        sector = [
-            sudoku[posicion+0+0],  sudoku[posicion+1+0],  sudoku[posicion+2+0],
-            sudoku[posicion+0+9],  sudoku[posicion+1+9],  sudoku[posicion+2+9],
-            sudoku[posicion+0+18], sudoku[posicion+1+18], sudoku[posicion+2+18]
-        ]
-        return sector
-
-def get_sudoku():
-    return sudokuResuelto
 
 def imprime_sudoku(sudoku):
     x = 0
@@ -118,214 +119,34 @@ def imprime_sudoku(sudoku):
 
         iteracion += 1
 
-def shuffle_in_place(genes, first, last):
-    while first < last:
-        index = random.randint(first, last)
-        genes[first], genes[index] = genes[index], genes[first]
-        first += 1
+def main():
+    poblacionInicial = 700
+    longitudIndividuo = 81
+    poblacion_maxima = 1000
 
-def index_row(index):
-    return int(index / 9)
+    individuos = [ [ random.randint(1, 9) for _ in range(longitudIndividuo)] for _ in range(poblacionInicial) ]
 
-def index_column(index):
-    return int(index % 9)
+    # individuo = [5,3,4,6,7,8,9,1,2,6,7,2,1,9,5,3,4,8,1,9,8,3,4,2,5,6,7,8,5,9,7,6,1,4,2,3,4,2,6,8,5,3,7,9,1,7,1,3,9,2,4,8,5,6,9,6,1,5,3,7,2,8,4,2,8,7,4,1,9,6,3,5,3,4,5,2,8,6,1,7,9]
+    # individuos.append(individuo)
 
-def row_column_section(row, column):
-    return int(row / 3) * 3 + int(column / 3)
+    poblacion_data = {'individuo':individuos,'genotipo':[ ''.join(str(i)) for i in individuos],'fitness':map(calcular_fitness,individuos)}
 
-def section_start(index):
-    return int((index_row(index) % 9) / 3) * 27 + int(
-        index_column(index) / 3) * 3
-
-def build_validation_rules():
-    rules = []
-    for index in range(80):
-        itsRow = index_row(index)
-        itsColumn = index_column(index)
-        itsSection = row_column_section(itsRow, itsColumn)
-
-        for index2 in range(index + 1, 81):
-            otherRow = index_row(index2)
-            otherColumn = index_column(index2)
-            otherSection = row_column_section(otherRow, otherColumn)
-            if itsRow == otherRow or \
-                            itsColumn == otherColumn or \
-                            itsSection == otherSection:
-                rules.append(Rule(index, index2))
-
-    rules.sort(key=lambda x: x.OtherIndex * 100 + x.Index)
-    return rules
-
-class Rule:
-    def __init__(self, it, other):
-        if it > other:
-            it, other = other, it
-        self.Index = it
-        self.OtherIndex = other
-
-    def __eq__(self, other):
-        return self.Index == other.Index and \
-               self.OtherIndex == other.OtherIndex
-
-    def __hash__(self):
-        return self.Index * 100 + self.OtherIndex
-
-validationRules = build_validation_rules()
-
-def mutate(genes, validationRules):
-    selectedRule = next(rule for rule in validationRules
-                        if genes[rule.Index] == genes[rule.OtherIndex])
-        
-    if selectedRule is None:
-        return
-
-    if index_row(selectedRule.OtherIndex) % 3 == 2 \
-            and random.randint(0, 10) == 0:
-        sectionStart = section_start(selectedRule.Index)
-        current = selectedRule.OtherIndex
-        while selectedRule.OtherIndex == current:
-            shuffle_in_place(genes, sectionStart, 80)
-            selectedRule = next(rule for rule in validationRules
-                                if genes[rule.Index] == genes[rule.OtherIndex])
-        return
-
-    row = index_row(selectedRule.OtherIndex)
-    start = row * 9
-    indexA = selectedRule.OtherIndex
-    indexB = random.randrange(start, len(genes))
-    genes[indexA], genes[indexB] = genes[indexB], genes[indexA]
-
-def dinamica_evolutiva(estadisticas):
-    def add_estadisticas(poblacion, iteracion=1):
-        fitnesses = [individual.fitness.values[0] for individual in poblacion]
-        return {
-            "ite" :  iteracion,
-            "mean":  np.mean(fitnesses),
-            "std" :  np.std(fitnesses),
-            "max" :  np.max(fitnesses),
-            "min" :  np.min(fitnesses)
-        }
-
-    pop = toolbox.population(n=500)
-
-    # CXPB  is the probability with which two individuals
-    #       are crossed
-    #
-    # MUTPB is the probability for mutating an individual
-    CXPB, MUTPB = 0.83, 0.75
-
-    print("Start of evolution")
-
-    fitnesses = list(map(toolbox.evaluate, pop))
-    for ind, fit in zip(pop, fitnesses):
-        ind.fitness.values = fit
-
-    print("  Evaluated %i individuals" % len(pop))
-
-    fits = [ind.fitness.values[0] for ind in pop]
-    g = 0
-
-    while min(fits) > 0 and g < 200:
-        g = g + 1
-        print("-- Generación %i --" % g)
-
-        offspring = toolbox.select(pop, len(pop))
-        offspring = list(map(toolbox.clone, offspring))
-
-        for child1, child2 in zip(offspring[::2], offspring[1::2]):
-
-            if random.random() < CXPB:
-                toolbox.mate(child1, child2)
-
-                del child1.fitness.values
-                del child2.fitness.values
-
-        for mutant in offspring:
-            if random.random() < MUTPB:
-                mutate(mutant, validationRules)
-                del mutant.fitness.values
-
-        invalid_ind = [ind for ind in offspring if not ind.fitness.valid]
-        fitnesses = map(toolbox.evaluate, invalid_ind)
-        for ind, fit in zip(invalid_ind, fitnesses):
-            ind.fitness.values = fit
-
-        # print("  Evaluated %i individuals" % len(invalid_ind))
-
-        pop[:] = offspring
-        
-        estadisticas.append(add_estadisticas(pop, g))
-        
-        fits = [ind.fitness.values[0] for ind in pop]
-        
-        length = len(pop)
-        mean = sum(fits) / length
-        sum2 = sum(x*x for x in fits)
-        std = abs(sum2 / length - mean**2)**0.5
-        
-        # print("  Min %s" % min(fits))
-        # print("  Max %s" % max(fits))
-        # print("  Avg %s" % mean)
-        # print("  Std %s" % std)
-
-    best_ind = tools.selBest(pop, 1)[0]
-
-    return {
-        "best_ind" :  best_ind,
-        "g"        :  g
-    }
-
-def main(estadisticas):
-    global sudokuResuelto
-    try:
-        resultado = dinamica_evolutiva(estadisticas)
-        if resultado["best_ind"].fitness.values[0] != 0.0:
-            main(estadisticas)
-        else:
-            print("\n\nSOLUCIÓN en la generación {}".format(resultado["g"]))
-            imprime_sudoku(resultado["best_ind"])
-            sudokuResuelto = resultado["best_ind"]
-            print("Fitness: {}".format(resultado["best_ind"].fitness.values[0]))
-            
-    except:
-        main(estadisticas)
-
-def grafica(estadisticas):
-    plt.scatter(range(1, len(estadisticas)+1), [s["min"] for s in estadisticas], marker=".")
-    plt.title("Promedio de fitness por iteración")
-    plt.xlabel("Iteraciones")
-    plt.ylabel("Fitness")
-    plt.show()
-
-def inicializar():
-    estadisticas = list()
-    main(estadisticas)
-    
-creator.create("FitnessMin", base.Fitness, weights=(-1.0,))    # Se crea la clase "FitnessMin", derivada de la clase "base.Fitness"
-creator.create("Individual", list, fitness=creator.FitnessMin) # Se crea la clase Individual, representada en el tipo de dato "lista"
-
-# Se instancia el objeto toolbox de la clase "base.Toolbox()". Este objeto contiene el método "register" que se usará a continuación
-toolbox = base.Toolbox()
-
-# Se registra la función fitness
-toolbox.register("evaluate", calcula_fitness)
-
-TAMANIO_INDIVIDUO = 81 # Tamaño de cada individuo (sudokus aleatorios generados)
-
-# "toolbox.register"() añade un método al objeto "toolbox". Este método es denominado "entero_aleatorio" y llama a la función...
-#  "random.randint" generando un número aleatorio entre 1 y 9 (los valores válidos del sudoku)
-toolbox.register("entero_aleatorio", random.randint, 1, 9)
-
-# Este método genera un nuevo individuo
-toolbox.register("individual", tools.initRepeat, creator.Individual, toolbox.entero_aleatorio, n=TAMANIO_INDIVIDUO)
-
-# Este método genera una nueva población, llamando al método que genera individuos
-toolbox.register("population", tools.initRepeat, list, toolbox.individual)
-
-# Operador de cruce. Registra el método para el cruce en 2 puntos
-toolbox.register("mate", tools.cxTwoPoint)
-
-# Operador de Selección. El método de selección es por "torneo", tomando como criterio de selección el fitness
-toolbox.register("select", tools.selTournament, tournsize=3, fit_attr="fitness")
-
-# grafica(estadisticas)
+    poblacion = DataFrame(poblacion_data).sort_values(by='fitness',ascending=True,ignore_index=True)
+    numero_generaciones = 400
+    generacion = 0
+    while list(poblacion.iloc[0])[2] > 0 and generacion<numero_generaciones:
+        print(f'{generacion}. mejor solucion: {list(poblacion.iloc[0])[2] }')
+        descendientes = cruza(poblacion)
+        nuevos_individuos = mutacion(descendientes,0.1,0.055)
+        data_nuevos_individuos = {'individuo':nuevos_individuos,'genotipo':[ ''.join(str(i)) for i in nuevos_individuos],'fitness':map(calcular_fitness,nuevos_individuos)}
+        pd_nuevos_individuos = DataFrame(data_nuevos_individuos)
+        poblacion = concat([poblacion,pd_nuevos_individuos]).sort_values(by='fitness',ascending=True,ignore_index=True)
+        poblacion = poda(poblacion,poblacion_maxima)
+        generacion+=1
+        # print(poblacion)
+    if list(poblacion.iloc[0])[2] == 0:
+        print(f'La solucion fue encontrada en la generación {generacion}')
+        # print(list(poblacion.iloc[0])[0])
+        return list(poblacion.iloc[0])[0]
+    else:
+        main()
