@@ -1,8 +1,23 @@
 from random import random
-from matplotlib.colors import PowerNorm
 from pandas import DataFrame, concat
 from numpy import array_split
 import random
+
+def evaluacion(poblacion):
+    longitud_poblacion = len(poblacion['individuo'])
+    padres = []
+    indice_padres = array_split(random.sample(range(longitud_poblacion), longitud_poblacion),int(longitud_poblacion/2))
+    for indice in indice_padres:
+        individuo1=list(poblacion.iloc[indice[0]])
+        individuo2=list(poblacion.iloc[indice[1]])
+        if individuo1[2] > individuo2[2]:
+            padres.append(indice[1])
+        elif individuo2[2] > individuo1[2]:
+            padres.append(indice[0])
+        else:
+            padres.append(indice[0])
+            padres.append(indice[1])
+    return array_split(padres,int(len(padres)/2))
 
 def obtener_sectores(sudoku):
     sectores = []
@@ -32,42 +47,45 @@ def calcular_fitness(sudoku):
     return fitness
 
 def cruza(poblacion):
-    longitud_poblacion = len(poblacion['individuo'])
-    indice_padres = array_split(random.sample(range(longitud_poblacion), longitud_poblacion),int(longitud_poblacion/2))
+    # poblacion=evaluacion(poblacion)
+    # longitud_poblacion = len(poblacion['individuo'])
+    # indice_padres = array_split(random.sample(range(longitud_poblacion), longitud_poblacion),int(longitud_poblacion/2))
+    indice_padres=evaluacion(poblacion)
     descendientes = []
     for indice in indice_padres:
-        padre1=poblacion['individuo'][indice[0]]
-        padre2=poblacion['individuo'][indice[1]]
+        if len(indice) == 2:
+            padre1=poblacion['individuo'][indice[0]]
+            padre2=poblacion['individuo'][indice[1]]
 
-        numero_puntos = random.randint(1,9)
-        puntos_cruza = list(reversed(sorted(random.sample(range(1, len(padre1)-1), numero_puntos))))
-        hijo1 = []
-        hijo2 = []
-        cruza = False
-        indice_punto = 0
-        indice_maximo = len(padre1)
-        while len(puntos_cruza) > 0:
-            punto = puntos_cruza.pop()
-            if cruza:
-                hijo2+=padre1[indice_punto:punto]
-                hijo1+=padre2[indice_punto:punto]
-                cruza = False
-            else:
-                hijo1+=padre1[indice_punto:punto]
-                hijo2+=padre2[indice_punto:punto]
-                cruza = True
-            indice_punto = punto
-            if len(puntos_cruza) == 0:
+            numero_puntos = random.randint(1,len(padre1)-1)
+            puntos_cruza = list(reversed(sorted(random.sample(range(1, len(padre1)), numero_puntos))))
+            hijo1 = []
+            hijo2 = []
+            cruza = False
+            indice_punto = 0
+            indice_maximo = len(padre1)
+            while len(puntos_cruza) > 0:
+                punto = puntos_cruza.pop()
                 if cruza:
-                    hijo2+=padre1[indice_punto:indice_maximo]
-                    hijo1+=padre2[indice_punto:indice_maximo]
+                    hijo2+=padre1[indice_punto:punto]
+                    hijo1+=padre2[indice_punto:punto]
                     cruza = False
                 else:
-                    hijo1+=padre1[indice_punto:indice_maximo]
-                    hijo2+=padre2[indice_punto:indice_maximo]
+                    hijo1+=padre1[indice_punto:punto]
+                    hijo2+=padre2[indice_punto:punto]
                     cruza = True
-        descendientes.append(hijo1)
-        descendientes.append(hijo2)
+                indice_punto = punto
+                if len(puntos_cruza) == 0:
+                    if cruza:
+                        hijo2+=padre1[indice_punto:indice_maximo]
+                        hijo1+=padre2[indice_punto:indice_maximo]
+                        cruza = False
+                    else:
+                        hijo1+=padre1[indice_punto:indice_maximo]
+                        hijo2+=padre2[indice_punto:indice_maximo]
+                        cruza = True
+            descendientes.append(hijo1)
+            descendientes.append(hijo2)
     return descendientes
 
 def mutacion(descendientes,pmi,pmg):
@@ -120,33 +138,52 @@ def imprime_sudoku(sudoku):
         iteracion += 1
 
 def main():
-    poblacionInicial = 450
+    print('iniciando')
+    poblacionInicial = 30 #30 | 20
     longitudIndividuo = 81
-    poblacion_maxima = 900
+    poblacion_maxima = 200 #450 | 200
 
-    individuos = [ [ random.randint(1, 9) for _ in range(longitudIndividuo)] for _ in range(poblacionInicial) ]
+    # individuos = [ [ random.randint(1, 9) for _ in range(longitudIndividuo)] for _ in range(poblacionInicial) ]
 
+    genotipo_individuos_iniciales = []
+    individuos = []
+    for _ in range(poblacionInicial):
+        individuo = []
+        for i in [random.sample(range(1,10), 9) for _ in range(9)]:
+            individuo+=i
+        individuos.append(individuo)
+        genotipo_individuos_iniciales.append(''.join([ str(gen) for gen in individuo]))
+
+    # for individuo in individuos:
+        # genotipo_individuos_iniciales.append(''.join([ str(gen) for gen in individuo]))
+    # print(individuos)
     # individuo = [5,3,4,6,7,8,9,1,2,6,7,2,1,9,5,3,4,8,1,9,8,3,4,2,5,6,7,8,5,9,7,6,1,4,2,3,4,2,6,8,5,3,7,9,1,7,1,3,9,2,4,8,5,6,9,6,1,5,3,7,2,8,4,2,8,7,4,1,9,6,3,5,3,4,5,2,8,6,1,7,9]
     # individuos.append(individuo)
 
-    poblacion_data = {'individuo':individuos,'genotipo':[ ''.join(str(i)) for i in individuos],'fitness':map(calcular_fitness,individuos)}
+    poblacion_data = {'individuo':individuos,'genotipo': genotipo_individuos_iniciales,'fitness':map(calcular_fitness,individuos)}
 
     poblacion = DataFrame(poblacion_data).sort_values(by='fitness',ascending=True,ignore_index=True)
-    numero_generaciones = 600
-    generacion = 0
+    # print(poblacion)
+    # poblacion = evaluacion(poblacion)
+    # print(cruza(poblacion))
+    numero_generaciones = 5000
+    generacion = 1
     while list(poblacion.iloc[0])[2] > 0 and generacion<numero_generaciones:
         print(f'{generacion}. mejor solucion: {list(poblacion.iloc[0])[2] }')
         descendientes = cruza(poblacion)
-        nuevos_individuos = mutacion(descendientes,0.11,0.045)
-        data_nuevos_individuos = {'individuo':nuevos_individuos,'genotipo':[ ''.join(str(i)) for i in nuevos_individuos],'fitness':map(calcular_fitness,nuevos_individuos)}
+        nuevos_individuos = mutacion(descendientes,0.85,0.029)
+        genotipo_individuos_nuevos = []
+        for genotipo in nuevos_individuos:
+            genotipo_individuos_nuevos.append(''.join([ str(gen) for gen in genotipo]))
+        data_nuevos_individuos = {'individuo':nuevos_individuos,'genotipo':genotipo_individuos_nuevos,'fitness':map(calcular_fitness,nuevos_individuos)}
         pd_nuevos_individuos = DataFrame(data_nuevos_individuos)
         poblacion = concat([poblacion,pd_nuevos_individuos]).sort_values(by='fitness',ascending=True,ignore_index=True)
         poblacion = poda(poblacion,poblacion_maxima)
         generacion+=1
-        # print(poblacion)
     if list(poblacion.iloc[0])[2] == 0:
+        print(poblacion)
         print(f'La solucion fue encontrada en la generación {generacion}')
-        # print(list(poblacion.iloc[0])[0])
+        print(list(poblacion.iloc[0])[0])
         return list(poblacion.iloc[0])[0]
     else:
         main()
