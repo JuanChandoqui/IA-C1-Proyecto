@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>554</width>
-    <height>605</height>
+    <height>634</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -77,15 +77,17 @@
        <font>
         <family>MS Shell Dlg 2</family>
         <pointsize>8</pointsize>
-        <weight>75</weight>
+        <weight>9</weight>
         <italic>false</italic>
-        <bold>true</bold>
+        <bold>false</bold>
         <stylestrategy>PreferDefault</stylestrategy>
         <kerning>true</kerning>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);</string>
+       <string notr="true">border-color: rgb(85, 170, 255);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMethodHints">
        <set>Qt::ImhNone</set>
@@ -117,13 +119,18 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
         <kerning>true</kerning>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);</string>
+       <string notr="true">border-color: rgb(85, 170, 255);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -149,13 +156,18 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
         <kerning>true</kerning>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);</string>
+       <string notr="true">border-color: rgb(85, 170, 255);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -181,13 +193,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -213,13 +229,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -245,13 +265,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -277,13 +301,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -309,13 +337,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -341,13 +373,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -392,12 +428,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-color: rgb(85, 170, 255);</string>
+       <string notr="true">border-color: rgb(85, 170, 255);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -423,12 +464,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
 </string>
       </property>
       <property name="inputMask">
@@ -455,13 +501,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -487,13 +537,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -519,13 +573,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -551,13 +609,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -583,13 +645,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -615,13 +681,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -647,13 +717,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -698,13 +772,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -730,13 +808,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -762,13 +844,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -794,13 +880,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -826,13 +916,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -858,13 +952,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -890,13 +988,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -922,13 +1024,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -954,13 +1060,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1005,13 +1115,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1037,13 +1151,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1069,13 +1187,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1101,13 +1223,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1133,13 +1259,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1165,13 +1295,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1197,13 +1331,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1229,13 +1367,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1261,13 +1403,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1312,13 +1458,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1344,13 +1494,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1376,13 +1530,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1408,13 +1566,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1440,13 +1602,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1472,13 +1638,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1504,13 +1674,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1536,13 +1710,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1568,13 +1746,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1619,13 +1801,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1651,13 +1837,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1683,13 +1873,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1715,13 +1909,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1747,13 +1945,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1779,13 +1981,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1811,13 +2017,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1843,13 +2053,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1875,13 +2089,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1926,13 +2144,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1958,13 +2180,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -1990,13 +2216,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2022,13 +2252,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2054,13 +2288,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2086,13 +2324,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2118,13 +2360,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2150,13 +2396,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2182,13 +2432,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2233,13 +2487,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2265,13 +2523,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2297,13 +2559,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2329,13 +2595,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2361,13 +2631,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2393,13 +2667,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2425,13 +2703,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2457,13 +2739,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2489,13 +2775,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2540,13 +2830,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2572,13 +2866,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2604,13 +2902,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2636,13 +2938,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2668,13 +2974,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2700,13 +3010,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2732,13 +3046,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2764,13 +3082,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2796,13 +3118,17 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
        <string notr="true">border-color: rgb(85, 170, 255);
-</string>
+color: rgb(255, 255, 255);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
       </property>
       <property name="inputMask">
        <string>d</string>
@@ -2818,8 +3144,8 @@
     <widget class="QPushButton" name="pushButton_ResolverSudoku">
      <property name="geometry">
       <rect>
-       <x>200</x>
-       <y>530</y>
+       <x>350</x>
+       <y>570</y>
        <width>151</width>
        <height>41</height>
       </rect>
@@ -2830,7 +3156,44 @@ font: 87 italic 8pt &quot;Segoe UI Black&quot;;
 color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
-      <string>RESOLVER SUDOKU</string>
+      <string>GENERAR SUDOKU</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_analizando">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>520</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>COMPLETADO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_limpiarSudoku">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>570</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(67, 67, 202);
+font: 87 italic 8pt &quot;Segoe UI Black&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>LIMPIAR SUDOKU</string>
      </property>
     </widget>
    </widget>
