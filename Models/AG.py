@@ -1,7 +1,8 @@
 from random import random
 from pandas import DataFrame, concat
-from numpy import array_split
+from numpy import array_split, mean
 import random
+import matplotlib.pyplot as plt
 
 def evaluacion(poblacion):
     longitud_poblacion = len(poblacion['individuo'])
@@ -47,9 +48,6 @@ def calcular_fitness(sudoku):
     return fitness
 
 def cruza(poblacion):
-    # poblacion=evaluacion(poblacion)
-    # longitud_poblacion = len(poblacion['individuo'])
-    # indice_padres = array_split(random.sample(range(longitud_poblacion), longitud_poblacion),int(longitud_poblacion/2))
     indice_padres=evaluacion(poblacion)
     descendientes = []
     for indice in indice_padres:
@@ -137,13 +135,26 @@ def imprime_sudoku(sudoku):
 
         iteracion += 1
 
+def graficar(estadisticas):
+    plt.plot(estadisticas['mejorCaso'], label="Mejor caso")
+    plt.plot(estadisticas['promedio'],label="Caso promedio")
+    plt.plot(estadisticas['peorCaso'], label="Peor Caso")
+    plt.legend()
+    plt.xlabel("Iteraciones")
+    plt.ylabel("Aptitud")
+    plt.title("EvolucionGeneraciones")
+    plt.show()
+
+
 def main():
-    print('iniciando')
     poblacionInicial = 30 #30 | 20
-    longitudIndividuo = 81
     poblacion_maxima = 200 #450 | 200
 
-    # individuos = [ [ random.randint(1, 9) for _ in range(longitudIndividuo)] for _ in range(poblacionInicial) ]
+    estadisticas = {
+        'mejorCaso':[],
+        'peorCaso': [],
+        'promedio': []
+    }
 
     genotipo_individuos_iniciales = []
     individuos = []
@@ -154,36 +165,40 @@ def main():
         individuos.append(individuo)
         genotipo_individuos_iniciales.append(''.join([ str(gen) for gen in individuo]))
 
-    # for individuo in individuos:
-        # genotipo_individuos_iniciales.append(''.join([ str(gen) for gen in individuo]))
-    # print(individuos)
     # individuo = [5,3,4,6,7,8,9,1,2,6,7,2,1,9,5,3,4,8,1,9,8,3,4,2,5,6,7,8,5,9,7,6,1,4,2,3,4,2,6,8,5,3,7,9,1,7,1,3,9,2,4,8,5,6,9,6,1,5,3,7,2,8,4,2,8,7,4,1,9,6,3,5,3,4,5,2,8,6,1,7,9]
     # individuos.append(individuo)
 
     poblacion_data = {'individuo':individuos,'genotipo': genotipo_individuos_iniciales,'fitness':map(calcular_fitness,individuos)}
 
     poblacion = DataFrame(poblacion_data).sort_values(by='fitness',ascending=True,ignore_index=True)
-    # print(poblacion)
-    # poblacion = evaluacion(poblacion)
-    # print(cruza(poblacion))
+
     numero_generaciones = 5000
-    generacion = 1
+    generacion = 0
     while list(poblacion.iloc[0])[2] > 0 and generacion<numero_generaciones:
-        print(f'{generacion}. mejor solucion: {list(poblacion.iloc[0])[2] }')
+        generacion+=1
+
         descendientes = cruza(poblacion)
         nuevos_individuos = mutacion(descendientes,0.85,0.029)
         genotipo_individuos_nuevos = []
         for genotipo in nuevos_individuos:
             genotipo_individuos_nuevos.append(''.join([ str(gen) for gen in genotipo]))
+
         data_nuevos_individuos = {'individuo':nuevos_individuos,'genotipo':genotipo_individuos_nuevos,'fitness':map(calcular_fitness,nuevos_individuos)}
         pd_nuevos_individuos = DataFrame(data_nuevos_individuos)
         poblacion = concat([poblacion,pd_nuevos_individuos]).sort_values(by='fitness',ascending=True,ignore_index=True)
+
+        estadisticas['mejorCaso'].append(min(poblacion['fitness']))
+        estadisticas['peorCaso'].append(max(poblacion['fitness']))
+        estadisticas['promedio'].append(mean(poblacion['fitness']))
+
         poblacion = poda(poblacion,poblacion_maxima)
-        generacion+=1
+        print(f'{generacion}. mejor solucion: {list(poblacion.iloc[0])[2] }')
+
     if list(poblacion.iloc[0])[2] == 0:
         print(poblacion)
-        print(f'La solucion fue encontrada en la generación {generacion}')
+        print(f'La solucion fue encontrada en la generación {generacion-1}')
         print(list(poblacion.iloc[0])[0])
+        graficar(estadisticas)
         return list(poblacion.iloc[0])[0]
     else:
         main()
